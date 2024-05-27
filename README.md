@@ -1,3 +1,7 @@
 # CanCodeFinalProject
 
-I have created five tables for a fictitious startup company.
+For my final project, I have created a fictitious start up company for which I will be tracking orders. I have created a diagram to show the tables that are needed. This helped me visulaize and outline what was needed. I ended up creating five tables to support the company: customers, employees, inventory, orders, and products. I have populated those tables with data from a mock data generator found online. I have uploaded all sql scripts to create the tables and the etl package mapping the data. I used Visual Studio 2022 to edit, transform and load the data. In SSIS I created a database named ElizabethLoparcoDB and created the five tables with row headings to coorespond to the mock data I will be loading. In Visual Studio I created flow tasks for inporting a flat files into ADO.net destinations. Then I mapped the columns and hit execute. If there was an error I would have to read the explanation and work to correct until data loaded.
+
+Once all the mock data was loaded I created a stored procedure to backup the database. I created a function to round salary from the employees table. I created a view for the orders table that contains a join of three tables. I created an insert statement into the employee table to insert employeeID, nameFirst, nameLast, salary, phone, email.  I updated the employee salary for employeeID.  I deleted an employeeID for 139408.  This is the order I used: insert, update, delete.
+
+I also included a backup of the database for your reference (which was created using the stored procedure I created).
